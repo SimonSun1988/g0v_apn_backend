@@ -1,0 +1,11 @@
+extends layout
+
+
+block content
+	h1= title
+	p Welcome to #{title}
+
+	form.navbar-form.navbar-left(action="/pushApn", method="post", role="search")
+		.form-group
+			input.form-control(type="text", name="apnMessage",placeholder="輸入訊息")
+		button.btn.btn-default(type="submit") 送出
